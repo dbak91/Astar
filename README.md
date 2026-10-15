@@ -2,7 +2,8 @@
 
 Static one-page site (plain HTML/CSS, no build step) for an exterior jet wash, roof cleaning and minor gutter repair business covering Manchester and surrounding areas. Blue and white branding; logo in `images/logo.jpg`.
 
-Designed to live in its own repo: copy this folder's contents to a new repository root.
+## Publishing
+In the repo go to Settings → Pages → Source: "GitHub Actions". Pushing to `main` deploys the site via `.github/workflows/pages.yml` (no build step needed; all paths are relative so it works under `/Astar/`).
 
 ## To replace
 - Phone, email, Facebook/Instagram links (`href="#"` placeholders) and certificate/insurance details in `index.html`.
