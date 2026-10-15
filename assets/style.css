@@ -7,7 +7,7 @@ body{margin:0;font:17px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;c
 header.site{position:sticky;top:0;background:#fff;border-bottom:2px solid var(--blue);z-index:5}
 header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:8px;padding-bottom:8px;flex-wrap:wrap}
 .brand{display:flex;align-items:center;gap:10px;color:var(--navy);font-weight:800;text-decoration:none}
-.brand img,.hero-logo{border-radius:50%;object-fit:cover;object-position:50% 49%;background:#fff}
+.brand img{border-radius:50%;object-fit:cover;object-position:50% 49%;background:#fff}
 nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0;align-items:center}
 nav a{color:var(--navy);font-weight:600;text-decoration:none}
 .btn{display:inline-block;background:var(--blue);color:#fff;padding:12px 22px;border-radius:999px;font-weight:700;text-decoration:none;margin:4px 8px 4px 0;border:2px solid var(--blue)}
@@ -22,7 +22,7 @@ nav a.btn{color:#fff}.btn.sm{padding:6px 16px}
 .tag{display:inline-block;background:var(--blue);color:#fff;border-radius:999px;padding:4px 14px;font-size:14px;font-weight:600}
 h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.1;margin:14px 0;color:var(--navy)}
 .lead{font-size:1.25rem;margin:0 0 20px}
-.hero-logo{width:min(320px,70vw);height:auto;aspect-ratio:1;border:4px solid var(--blue)}
+
 section{padding:56px 0}
 .tint{background:var(--light)}
 .blue{background:var(--blue);color:#fff;text-align:center}
@@ -41,3 +41,17 @@ h2{font-size:2rem;margin:0 0 8px;color:var(--navy)}.blue h2{color:#fff}
 .area{font-weight:600}
 .contact{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
 footer.site{background:var(--navy);color:#fff;text-align:center;padding:18px 0;font-size:.9rem}
+.card .ph img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s ease}
+.card:hover .ph img{transform:scale(1.05)}
+.hero-van{flex:1 1 380px;max-width:520px;margin:0}
+.hero-van img{width:100%;height:auto;display:block;border-radius:16px;border:4px solid var(--blue);box-shadow:0 10px 30px rgba(6,74,158,.25)}
+.hero-van figcaption,.showcase figcaption{font-size:.9rem;color:#4b5f7a;margin-top:6px}
+.showcase{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.showcase figure{margin:0}.showcase .wide{grid-column:1/-1}
+.kb{overflow:hidden;border-radius:14px;aspect-ratio:3/2}.wide .kb{aspect-ratio:21/9}
+.kb img{width:100%;height:100%;object-fit:cover;display:block;animation:kb 18s ease-in-out infinite alternate}
+@keyframes kb{from{transform:scale(1)}to{transform:scale(1.08) translate(-1%,-1%)}}
+.js .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media(max-width:600px){.showcase{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.kb img{animation:none}.js .reveal{opacity:1;transform:none;transition:none}.card .ph img{transition:none}}
