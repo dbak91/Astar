@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="logo-title">
+  <title id="logo-title">A Star Cleaning Specialists</title>
+  <circle cx="256" cy="256" r="256" fill="#fff"/>
+  <circle cx="256" cy="256" r="242" fill="none" stroke="#0968c9" stroke-width="6"/>
+  <g fill="#2b3036">
+    <path d="M312 94h28v67l-28-25z"/>
+    <path d="M308 90h36v10h-36z"/>
+    <path fill-rule="evenodd" d="M256 72 383 187h-27v123h-73v-84h-54v84h-73V187h-27L256 72zm0 19-98 89h12v116h45v-84h82v84h45V180h12L256 91z"/>
+  </g>
+  <g fill="#0968c9" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="40" text-anchor="middle">
+    <text x="256" y="373" textLength="388" lengthAdjust="spacingAndGlyphs">A STAR CLEANING</text>
+    <text x="256" y="420" textLength="300" lengthAdjust="spacingAndGlyphs">SPECIALISTS</text>
+  </g>
+</svg>
